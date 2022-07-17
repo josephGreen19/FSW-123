@@ -1,26 +1,37 @@
 
 
 
+import './styles.css';
 
-function ToDoList() {
+function TodoList() {
 
     return  ( 
         <div>
-        <h1>List of Todos</h1>
-        <input id="Todo1"  type="checkbox" />
-        <span style={{fontWeight:' bold'}}>go to Gym</span><br></br>
+            <h1>List of Todos</h1>
+            <ul>
+                 <li>
+                     <input id="Todo1"  type="checkbox" />
+                      go to gym
+                 </li>
 
-        <input id="Todo2"  type="checkbox" />
-        <span style={{fontWeight:' bold'}}>do laundry</span><br></br>
+                 <li>
+                     <input id="Todo1"  type="checkbox" />
+                      do laundry
+                 </li>
 
-        <input id="Todo3"  type="checkbox" />
-        <span style={{fontWeight:' bold'}}>food shopping</span><br></br>
+                 <li>
+                     <input id="Todo1"  type="checkbox" />
+                      food shopping
+                 </li>
 
-        <input id="Todo4"  type="checkbox" />
-        <span style= {{fontWeight:' bold'}}>do homework</span><br></br>
-
+                 <li>
+                     <input id="Todo1"  type="checkbox" />
+                      do homework
+                 </li>
+            </ul>
         </div>
+        
     );
 }
 
-export default ToDoList;
+export default TodoList;
