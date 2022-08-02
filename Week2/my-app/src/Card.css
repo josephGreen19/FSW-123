@@ -1,0 +1,9 @@
+#wrapped {
+    display: flex;
+}
+
+#wrapped div {
+   height: 150px;
+   margin: 10px;
+   text-align: center;
+}
