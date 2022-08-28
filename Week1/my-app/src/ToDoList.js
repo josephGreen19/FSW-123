@@ -1,30 +1,31 @@
 
-
+import ListItem from './ListItem';
 import './styles.css';
 
-function TodoList(props) {
-    
+function List(props) {
 
-    return  ( 
+
+    return (
         <div>
             <h1>List of Todos</h1>
             <ul>
-                
-                 {props.data.map((todo)=>{
+
+                {props.data.map((todo) => {
                     console.log(todo.text)
                     return (
-                        <li>
-                        <input id="Todo1"  type="checkbox" />
-                         {todo.text}
-                    </li>
-                    )
-                 })}
+                        <ListItem todo={todo} key={todo.id}
+                            completeTodo={props.completeTodo}
+                            deleteTodo={props.deleteTodo}
+                        />
 
-               
+                    )
+                })}
+
+
             </ul>
         </div>
-        
+
     );
 }
 
-export default TodoList;
+export default List;
